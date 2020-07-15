@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="jumbotron text-center bg-dark">
+        <h3 class="accApp">Accounts app</h3>
+        <button id="accountsBtn" class="btn btn-primary">accounts</button>
+        <button id="addAccountsBtn" class="btn btn-warning">add accounts</button>
+    </div>
+    <div class="container">
+        <div id="accountsView" class="row">
+            <div class="col-10 offset-1">
+                <h3>Accounts</h3>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Name</th>
+                                    <th>Phones</th>
+                                    <th>Email</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="addAccountsView" class="row">
+            <div class="col-10 offset-1">
+                <h3>Add accounts</h3>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <input type="text" placeholder="id" class="form-control"><br>
+                        <input type="text" placeholder="name" class="form-control"><br>
+                        <input type="text" placeholder="phone" class="form-control"><br>
+                        <input type="text" placeholder="email" class="form-control"><br>
+                        <button id="saveBtn" class="btn btn-primary form-control">save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="redux.js"></script>
+    <script src="store.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
